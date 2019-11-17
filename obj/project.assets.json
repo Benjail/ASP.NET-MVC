@@ -11915,11 +11915,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Михаил\\source\\repos\\ASP.NET-MVC\\ASP.NET-MVC.csproj",
+      "projectUniqueName": "C:\\Users\\Михаил\\source\\repos\\ASP.NET-MVC IT Proger\\ASP.NET-MVC.csproj",
       "projectName": "ASP.NET-MVC",
-      "projectPath": "C:\\Users\\Михаил\\source\\repos\\ASP.NET-MVC\\ASP.NET-MVC.csproj",
+      "projectPath": "C:\\Users\\Михаил\\source\\repos\\ASP.NET-MVC IT Proger\\ASP.NET-MVC.csproj",
       "packagesPath": "C:\\Users\\Михаил\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Михаил\\source\\repos\\ASP.NET-MVC\\obj\\",
+      "outputPath": "C:\\Users\\Михаил\\source\\repos\\ASP.NET-MVC IT Proger\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

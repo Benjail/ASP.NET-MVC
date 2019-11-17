@@ -12,3 +12,17 @@ C:\Users\Михаил\source\repos\ASP.NET-MVC\obj\Debug\netcoreapp2.1\ASP.NET-M
 C:\Users\Михаил\source\repos\ASP.NET-MVC\obj\Debug\netcoreapp2.1\ASP.NET-MVC.RazorTargetAssemblyInfo.cache
 C:\Users\Михаил\source\repos\ASP.NET-MVC\obj\Debug\netcoreapp2.1\ASP.NET-MVC.dll
 C:\Users\Михаил\source\repos\ASP.NET-MVC\obj\Debug\netcoreapp2.1\ASP.NET-MVC.pdb
+C:\Users\Михаил\source\repos\ASP.NET-MVC IT Proger\bin\Debug\netcoreapp2.1\Properties\launchSettings.json
+C:\Users\Михаил\source\repos\ASP.NET-MVC IT Proger\bin\Debug\netcoreapp2.1\ASP.NET-MVC.deps.json
+C:\Users\Михаил\source\repos\ASP.NET-MVC IT Proger\bin\Debug\netcoreapp2.1\ASP.NET-MVC.runtimeconfig.json
+C:\Users\Михаил\source\repos\ASP.NET-MVC IT Proger\bin\Debug\netcoreapp2.1\ASP.NET-MVC.runtimeconfig.dev.json
+C:\Users\Михаил\source\repos\ASP.NET-MVC IT Proger\bin\Debug\netcoreapp2.1\ASP.NET-MVC.dll
+C:\Users\Михаил\source\repos\ASP.NET-MVC IT Proger\bin\Debug\netcoreapp2.1\ASP.NET-MVC.pdb
+C:\Users\Михаил\source\repos\ASP.NET-MVC IT Proger\obj\Debug\netcoreapp2.1\ASP.NET-MVC.csprojAssemblyReference.cache
+C:\Users\Михаил\source\repos\ASP.NET-MVC IT Proger\obj\Debug\netcoreapp2.1\ASP.NET-MVC.RazorAssemblyInfo.cache
+C:\Users\Михаил\source\repos\ASP.NET-MVC IT Proger\obj\Debug\netcoreapp2.1\ASP.NET-MVC.RazorAssemblyInfo.cs
+C:\Users\Михаил\source\repos\ASP.NET-MVC IT Proger\obj\Debug\netcoreapp2.1\ASP.NET-MVC.AssemblyInfoInputs.cache
+C:\Users\Михаил\source\repos\ASP.NET-MVC IT Proger\obj\Debug\netcoreapp2.1\ASP.NET-MVC.AssemblyInfo.cs
+C:\Users\Михаил\source\repos\ASP.NET-MVC IT Proger\obj\Debug\netcoreapp2.1\ASP.NET-MVC.RazorTargetAssemblyInfo.cache
+C:\Users\Михаил\source\repos\ASP.NET-MVC IT Proger\obj\Debug\netcoreapp2.1\ASP.NET-MVC.dll
+C:\Users\Михаил\source\repos\ASP.NET-MVC IT Proger\obj\Debug\netcoreapp2.1\ASP.NET-MVC.pdb
