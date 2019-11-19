@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ASP.Data.Interfaces                                           
 {
-    interface ICarsCategory
+    public interface ICarsCategory
 {
     IEnumerable<Category> GetAllCategories { get;}  //функция возвращает список типа Category
 

@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using ASP.Data.Interfaces;
+using ASP.Data.Mocks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -16,6 +18,8 @@ namespace ASP.NET_MVC
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc(); //добавил концепцию MVC
+            services.AddTransient<IAllCars,MocksCars>();//закрепил реализацию интерфейса IAllCars в MocksCars
+            services.AddTransient<ICarsCategory, MockCategory>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -26,3 +26,15 @@ C:\Users\Михаил\source\repos\ASP.NET-MVC IT Proger\obj\Debug\netcoreapp2.1
 C:\Users\Михаил\source\repos\ASP.NET-MVC IT Proger\obj\Debug\netcoreapp2.1\ASP.NET-MVC.RazorTargetAssemblyInfo.cache
 C:\Users\Михаил\source\repos\ASP.NET-MVC IT Proger\obj\Debug\netcoreapp2.1\ASP.NET-MVC.dll
 C:\Users\Михаил\source\repos\ASP.NET-MVC IT Proger\obj\Debug\netcoreapp2.1\ASP.NET-MVC.pdb
+C:\Users\Михаил\source\repos\ASP.NET-MVC IT Proger\bin\Debug\netcoreapp2.1\ASP.NET-MVC.Views.dll
+C:\Users\Михаил\source\repos\ASP.NET-MVC IT Proger\bin\Debug\netcoreapp2.1\ASP.NET-MVC.Views.pdb
+C:\Users\Михаил\source\repos\ASP.NET-MVC IT Proger\obj\Debug\netcoreapp2.1\ASP.NET-MVC.TagHelpers.input.cache
+C:\Users\Михаил\source\repos\ASP.NET-MVC IT Proger\obj\Debug\netcoreapp2.1\ASP.NET-MVC.TagHelpers.output.cache
+C:\Users\Михаил\source\repos\ASP.NET-MVC IT Proger\obj\Debug\netcoreapp2.1\ASP.NET-MVC.RazorCoreGenerate.cache
+C:\Users\Михаил\source\repos\ASP.NET-MVC IT Proger\obj\Debug\netcoreapp2.1\Razor\Views\Cars\List.cshtml.g.cs
+C:\Users\Михаил\source\repos\ASP.NET-MVC IT Proger\obj\Debug\netcoreapp2.1\ASP.NET-MVC.RazorTargetAssemblyInfo.cs
+C:\Users\Михаил\source\repos\ASP.NET-MVC IT Proger\obj\Debug\netcoreapp2.1\ASP.NET-MVC.Views.pdb
+C:\Users\Михаил\source\repos\ASP.NET-MVC IT Proger\obj\Debug\netcoreapp2.1\ASP.NET-MVC.csproj.CopyComplete
+C:\Users\Михаил\source\repos\ASP.NET-MVC IT Proger\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\Михаил\source\repos\ASP.NET-MVC IT Proger\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\Михаил\source\repos\ASP.NET-MVC IT Proger\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.cshtml.g.cs
