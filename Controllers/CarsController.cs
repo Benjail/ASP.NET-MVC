@@ -21,7 +21,6 @@ namespace ASP.Controllers
         {                                                                       
             CarsListViewModels obj = new CarsListViewModels(); //создаю объект модели представления
             obj.getAllCars = _allCars.cars; //заполняю обект М. представления объектами бизнес-модели (экземплярами классов Mocks, реализующих интерфейс)
-            obj.carCategory = "Автомобили";
             ViewBag.Title = "Страница с автомобилями";
             return View(obj);
         }

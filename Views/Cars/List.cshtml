@@ -1,12 +1,15 @@
-﻿    <h2>Все автомобили: </h2>
-    @{ foreach(var car in Model.getAllCars) //теперь мы рабоатем с одним объектом из модели CarsListViewModels
-        {
-            <div class="raw"> 
-                <h1> @car.Name</h1>
-                <h2>@Model.carCategory</h2>
-                 <p> @car.Price.ToString("c")</p>
-                 <img src="@car.Img" alt="альтернативный текст">
-    </div>
-        }
-     }
+﻿    <h2 class="Pagename mt-2 ">Все автомобили: </h2> 
+    <div class="row mt-6 mb-2"> 
+        @{ foreach (var car in Model.getAllCars) //теперь мы рабоатем с одним объектом из модели CarsListViewModels
+            { 
+                <div class="col-lg-3">
+                    <img class="img-thumbnail" src="@car.Img" alt="альтернативный текст">
+                    <h2>@car.Name</h2>
+                    <h5>@car.Category.CategoryName</h5> 
+                    <p> @car.Price.ToString("c")</p>    
+                    <a class="btn btn-warning" href="#">Подробнее</a>   
+                </div>      
+            }   
+        }   
+        </div>  
 

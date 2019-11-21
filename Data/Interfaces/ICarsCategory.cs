@@ -9,7 +9,5 @@ namespace ASP.Data.Interfaces
     public interface ICarsCategory
 {
     IEnumerable<Category> GetAllCategories { get;}  //функция возвращает список типа Category
-
-
 }
 }
