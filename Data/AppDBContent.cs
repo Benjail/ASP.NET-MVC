@@ -1,4 +1,5 @@
 ﻿using ASP.Data.Models;
+using ASP.Models;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -15,6 +16,7 @@ namespace ASP.Data
         }
         public DbSet<Car> car { get; set; } //функция установки-получения объектов Car из DB
         public DbSet<Category> category { get; set; } //функция установки-получения объектов Category из DB
+        public DbSet<ShopCartItem> ShopCartItem { get; set; }                   
 
     }
 }

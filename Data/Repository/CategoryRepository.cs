@@ -15,7 +15,6 @@ namespace ASP.Repository
         {
             this.appDBContent= appDBContent;
         }
-
         public IEnumerable<Category> GetAllCategories=>appDBContent.category ;
     }
 }

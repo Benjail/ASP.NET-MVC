@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using ASP.Data;
 using ASP.Data.Interfaces;
 using ASP.Data.Mocks;
+using ASP.Models;
 using ASP.Repository;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -32,13 +33,19 @@ namespace ASP.NET_MVC
             services.AddMvc(); //добавил концепцию MVC
             services.AddTransient<IAllCars,CarRepository>();//закрепил реализацию интерфейса IAllCars в MocksCars !
             services.AddTransient<ICarsCategory, CategoryRepository>();//!
+
+            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();//??
+            services.AddScoped(sp => ShopCart.GetCart(sp));//??
+            services.AddMemoryCache();//??
+            services.AddSession();//??
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline. 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
-            app.UseDeveloperExceptionPage(); //
-            app.UseStatusCodePages(); // 
+            app.UseSession();//??
+            app.UseDeveloperExceptionPage(); //??
+            app.UseStatusCodePages(); //?? 
             app.UseStaticFiles(); //Статические файлы CSS, JS , IMG
             app.UseMvcWithDefaultRoute(); //Дефолтный маршрут URL (HomeControler, Index.html)
             if (env.IsDevelopment())
@@ -48,7 +55,6 @@ namespace ASP.NET_MVC
                     await context.Response.WriteAsync("In Development!");
                 });
             }
-        }
-            
+        }   
         }
     }
