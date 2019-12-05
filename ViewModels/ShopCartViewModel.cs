@@ -8,6 +8,6 @@ namespace ASP.ViewModels
 {
     public class ShopCartViewModel
 {
-        public ShopCart ShopCart { get; set; }
+        public ShopCart ShopCart { get; set; }                                      
 }
 }

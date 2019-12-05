@@ -41,3 +41,4 @@ C:\Users\Михаил\source\repos\ASP.NET-MVC IT Proger\obj\Debug\netcoreapp2.1
 C:\Users\Михаил\source\repos\ASP.NET-MVC IT Proger\bin\Debug\netcoreapp2.1\dbsettings.json
 C:\Users\Михаил\source\repos\ASP.NET-MVC IT Proger\obj\Debug\netcoreapp2.1\Razor\Views\Shared\AllCars.cshtml.g.cs
 C:\Users\Михаил\source\repos\ASP.NET-MVC IT Proger\obj\Debug\netcoreapp2.1\Razor\Views\ShopCart\Index.cshtml.g.cs
+C:\Users\Михаил\source\repos\ASP.NET-MVC IT Proger\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.cshtml.g.cs
