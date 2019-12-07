@@ -1,10 +1,11 @@
-﻿ @using ASP.Data.Models
- <h2 class="Pagename mt-2 ">Все автомобили: </h2> 
- <div class="row mt-6 mb-2"> 
-      @{ foreach (Car car in Model.getAllCars) //теперь мы рабоатем с одним объектом из модели CarsListViewModels
-           {
-              @Html.Partial("AllCars", car);
-           }
-       }   
-</div>  
+﻿@model CarsListViewModels
+
+<h2 class="Pagename mt-2 ">Все автомобили: @Model.carCategory </h2>
+<div class="row mt-6 mb-2">
+    @{ foreach (Car car in Model.getAllCars) //теперь мы рабоатем с одним объектом из модели CarsListViewModels
+        {
+            @Html.Partial("AllCars", car);
+        }
+    }
+</div>
 

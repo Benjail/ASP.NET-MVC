@@ -3,7 +3,7 @@
 <div class="row mt-6 mb-2">
     @{ foreach (Car car in Model.Favcars) //теперь мы рабоатем с одним объектом из модели CarsListViewModels
         {
-            @Html.Partial("AllCars", car);
+            @Html.Partial("AllCars", car); 
         }
     }
 </div>

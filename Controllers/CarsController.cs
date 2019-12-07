@@ -1,4 +1,5 @@
 ﻿using ASP.Data.Interfaces;
+using ASP.Data.Models;
 using ASP.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -17,12 +18,30 @@ namespace ASP.Controllers
             _allCars = iAllCars; //мы передаем не только интерфейс, но и классы, реализующие его (Mock...) c заполненными данными благодаря "services.AddTransient<ICarsCategory, MockCategory>();"
             _allCategories = iAllCategories;
         }
-        public ViewResult List()
-        {                                                                       
-            CarsListViewModels obj = new CarsListViewModels(); //создаю объект модели представления
-            obj.getAllCars = _allCars.cars; //заполняю обект М. представления объектами бизнес-модели (экземплярами классов Mocks, реализующих интерфейс)
-            ViewBag.Title = "Страница с автомобилями";
-            return View(obj);
+
+       [Route("Cars/List")]
+       [Route("Cars/List/{category}")]
+        public ViewResult List(string category)
+        {
+            string _category = category;
+            IEnumerable<Car> cars=null;
+            string currCategory=null;
+            if (string.IsNullOrEmpty(category))
+            {
+                cars=_allCars.cars.OrderBy(i=>i.Id);
+            } else {
+                    if(string.Equals("electro",category, StringComparison.OrdinalIgnoreCase))
+                    {
+                        cars = _allCars.cars.Where(c => c.CategoryId.Equals(1)).OrderBy(i => i.Id);
+                        currCategory = "Электромобили";
+                    } else if(string.Equals("fuel", category, StringComparison.OrdinalIgnoreCase))
+                        {
+                        cars = _allCars.cars.Where(c => c.CategoryId.Equals(2)).OrderBy(i => i.Id);
+                        currCategory = "Классические";
+                        }
+            }
+            var carobj = new CarsListViewModels { getAllCars = cars, carCategory = currCategory };    
+            return View(carobj);
         }
     }
 }

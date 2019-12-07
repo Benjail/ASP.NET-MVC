@@ -34,7 +34,6 @@ namespace ASP.NET_MVC
             services.AddMvc(); //добавил концепцию MVC
             services.AddTransient<IAllCars,CarRepository>();//закрепил реализацию интерфейса IAllCars в MocksCars !
             services.AddTransient<ICarsCategory, CategoryRepository>();//!
-
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();//??
             services.AddScoped(sp => ShopCart.GetCart(sp));//??
             services.AddMemoryCache();//??
@@ -48,14 +47,24 @@ namespace ASP.NET_MVC
             app.UseDeveloperExceptionPage(); // то выводим информацию об ошибке, при наличии ошибки
             app.UseStatusCodePages(); //?? 
             app.UseStaticFiles(); //Статические файлы CSS, JS , IMG
-            app.UseMvcWithDefaultRoute(); //Дефолтный маршрут URL (HomeControler, Index.html)
-            if (env.IsDevelopment())  // если приложение в процессе разработки
-            {
-                app.Run(async (context) =>
+           // app.UseMvcWithDefaultRoute(); //Дефолтный маршрут URL (HomeControler, Index.html)
+            app.UseMvc(routes =>
                 {
-                    await context.Response.WriteAsync("In Development!");
+                    routes.MapRoute(name: "cars", template: "Cars/{action}/{category?}", defaults: new { Controller = "Cars", action = "List"});
+                    routes.MapRoute(name: "default", template: "{controller=Home}/{action=Index}/{id?}");     
+                });
+            /*if (env.IsDevelopment())  // если приложение в процессе разработки        
+            {
+                app.Run(async (context) =>                                  
+                {
+                    await context.Response.WriteAsync("In Development!");           
                 });
             }
-        }   
-        }
-    }
+            using (var scope = app.ApplicationServices.CreateScope())
+            {
+                AppDBContent content = scope.ServiceProvider.GetRequiredService<AppDBContent>();
+                //DBObject.Initial(content);
+            }*/
+        }          
+    }   
+}
